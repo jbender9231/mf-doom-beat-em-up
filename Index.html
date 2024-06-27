@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF DOOM Beat 'Em Up</title>
+    <style>
+        canvas {
+            background: #000;
+            display: block;
+            margin: 0 auto;
+        }
+        body {
+            text-align: center;
+            color: #fff;
+            background-color: #222;
+            position: relative;
+        }
+        .control-button {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            color: #000;
+            user-select: none;
+        }
+        #left { bottom: 100px; left: 50px; }
+        #right { bottom: 100px; left: 150px; }
+        #up { bottom: 150px; left: 100px; }
+        #down { bottom: 50px; left: 100px; }
+        #action { bottom: 100px; right: 50px; }
+    </style>
+</head>
+<body>
+    <h1>MF DOOM Beat 'Em Up</h1>
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <div id="left" class="control-button">←</div>
+    <div id="right" class="control-button">→</div>
+    <div id="up" class="control-button">↑</div>
+    <div id="down" class="control-button">↓</div>
+    <div id="action" class="control-button">A</div>
+    <script src="game.js"></script>
+</body>
+</html>
